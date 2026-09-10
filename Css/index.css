@@ -1,0 +1,65 @@
+* {
+box-sizing: border-box;
+}
+
+body {
+margin: 0;
+/* só pra ver o footer "flutuando" na parte de baixo da tela, como um rodapé real */
+height: 100vh;
+display: flex;
+align-items: flex-end;
+background: #ddd;
+font-family: Tahoma, Arial, sans-serif;
+background-image: url('../Img/background.jpg');
+background-size: cover;
+}
+
+.footer {
+width: 100%;
+height: 40px;
+display: flex;
+align-items: center;
+
+/* degradê azul de cima pra baixo, como o efeito "glossy" do XP */
+background: linear-gradient(to bottom, #3a7bd5 0%, #1450c4 45%, #0c2f8f 100%);
+border-top: 1px solid #6fa3e8;
+
+color: #ffffff;
+font-size: 13px;
+}
+
+.btn-iniciar {
+display: flex;
+align-items: center;
+height: 100%;
+padding: 0 22px 0 14px;
+margin-right: 14px;
+
+/* degradê verde, e o border-radius só do lado direito
+    é o que cria aquela "barriga" arredondada característica */
+background: linear-gradient(to bottom, #7ed321 0%, #4c9a12 50%, #2c6b06 100%);
+border: none;
+border-radius: 0 20px 20px 0;
+
+color: #fff;
+font-style: italic;
+font-weight: bold;
+font-size: 15px;
+cursor: pointer;
+}
+
+.divisor {
+width: 1px;
+height: 55%;
+background: rgba(255, 255, 255, 0.35);
+margin-right: 14px;
+}
+
+.item-menu {
+margin-right: auto; /* empurra o próximo bloco pro canto direito */
+}
+
+.info-direita {
+margin-right: 14px;
+color: #f0f0f0;
+}
